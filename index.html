@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>TicTacToe</title>
+    <style>
+      table,
+      td {
+        border: 3px solid black;
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Tic Tac Toe!</h1>
+        <button type="button" class="btn btn-primary" onclick="clearBoard()">
+          Restart
+        </button>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <div style="text-align: center">
+      <button class="btn btn-primary" style="margin: 5px" onclick="checkWin()">
+        Check Win
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
